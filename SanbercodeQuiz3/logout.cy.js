@@ -13,9 +13,9 @@ describe('Login Feature',() => {
         cy.get('[class="oxd-userdropdown-link"]').contains('Logout').click();
         cy.get('[class="oxd-text oxd-text--h5 orangehrm-login-title"]').should('have.text','Login');
 
-        Cypress.on('uncaught:exception', (err, runnable) => {
+       // Cypress.on('uncaught:exception', (err, runnable) => {
             // Mengembalikan `false` untuk mencegah Cypress gagal pada uncaught exceptions
-            return false;
+       //     return false;
           });
           
     })
