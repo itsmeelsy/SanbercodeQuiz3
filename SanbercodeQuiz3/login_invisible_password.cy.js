@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 describe('Login Feature',() => {
-  it('Pengguna tidak dapat login menggunakan invalid password' ,() => {
+  it('Password yang dimasukkan pengguna invisible' ,() => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
     cy.get('[class="oxd-text oxd-text--h5 orangehrm-login-title"]').should('have.text','Login');
     cy.get('[name="username"]').type('Admin');
